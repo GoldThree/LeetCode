@@ -20,4 +20,5 @@ msc/
 .DS_Store
 
 .idea/
+.idea/workspace.xml
 vendor/
