@@ -1,12 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	result := myAtoi("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000522545459")
-	fmt.Println(result)
+	fmt.Println(myAtoi("234"))
 }
 func myAtoi(str string) int {
 	if len(str) == 0 {
