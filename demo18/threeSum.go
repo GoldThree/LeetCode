@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	nums := []int{0,2,-2,9}
-	result := threeSum(nums)
+	numbers := []int{0,2,-2,9}
+	result := threeSum(numbers)
 	fmt.Println(result)
 }
 
