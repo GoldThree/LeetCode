@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	a := []int{0,0,1,1,1,3,3,5,5,6}
+	a := []int{0,0,1,1,3,3,5,5,6}
 	result := removeDuplicates(a)
 	fmt.Println(result)
 
