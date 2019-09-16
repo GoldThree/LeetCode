@@ -1,4 +1,4 @@
-package NO100SameTree
+package No100SameTree
 
 type TreeNode struct {
 	Val   int
