@@ -1,6 +1,6 @@
 package No73setZeroes
 
-func setZeroes(matrix [][]int)  {
+func setZeroes(matrix [][]int) {
 
 	row := len(matrix)
 	if row == 0 {
@@ -15,20 +15,19 @@ func setZeroes(matrix [][]int)  {
 	rowZero := map[int]bool{}
 	columnZero := map[int]bool{}
 
-	for r:=0;r<row;r++ {
-		for c:=0;c<column;c++ {
+	for r := 0; r < row; r++ {
+		for c := 0; c < column; c++ {
 			if matrix[r][c] == 0 {
-				rowZero[r]=true
-				columnZero[c]=true
+				rowZero[r] = true
+				columnZero[c] = true
 				continue
 			}
 		}
 
-
-		for r:=0;r<row;r++ {
-			for c:=0;c<column;c++ {
+		for r := 0; r < row; r++ {
+			for c := 0; c < column; c++ {
 				if rowZero[r] {
-					matrix[r][c] =0
+					matrix[r][c] = 0
 					continue
 				}
 				if columnZero[c] {
@@ -37,4 +36,4 @@ func setZeroes(matrix [][]int)  {
 			}
 		}
 	}
-
+}
