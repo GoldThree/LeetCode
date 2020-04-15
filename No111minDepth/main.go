@@ -1,7 +1,5 @@
 package No111minDepth
 
-import "fmt"
-
 /**
  * Definition for a binary tree node.
  *
@@ -25,7 +23,6 @@ func minDepth(root *TreeNode) int {
 	for len(queue) > 0 {
 		min += 1
 		length := len(queue)
-		fmt.Println(queue)
 		for length > 0 {
 			if queue[0].Left != nil {
 				queue = append(queue, queue[0].Left)
